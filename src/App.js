@@ -1,4 +1,5 @@
 import Header from 'component/Header';
+import ProductFeature from 'features/Product';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import ColorBox from './component/ColorBox';
@@ -10,12 +11,13 @@ function App() {
   return (
     <div className="app">
       <Header />
-      
+
       <Switch>
-        <Route path='/' component={CounterFeature} exact/>
-        <Route path='/colorbox' component={ColorBox} exact/>
+        <Route path='/' component={CounterFeature} exact />
+        <Route path='/colorbox' component={ColorBox} exact />
         <Route path='/todo' component={TodoFeature} />
-        <Route component={NotFound}/>
+        <Route path='/products' component={ProductFeature} />
+        <Route component={NotFound} />
       </Switch>
     </div>
   );
