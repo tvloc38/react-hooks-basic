@@ -10,7 +10,6 @@ ProductFeature.propTypes = {
 
 function ProductFeature(props) {
   const match = useRouteMatch();
-  console.log(match)
   return (
     <Box pt={5}>
       <Switch>
